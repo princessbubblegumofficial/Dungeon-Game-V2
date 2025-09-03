@@ -13,7 +13,7 @@ public class CollectableCoin : MonoBehaviour
         {
             isCollected = true;
             // Assuming GameManager has a method to add points
-            GameManager gameManager = FindObjectOfType<GameManager>();
+            GameManager gameManager = FindAnyObjectByType<GameManager>();
             if (gameManager != null)
             {
                 gameManager.AddPoints(1f); // Add 1 point for each coin collected

@@ -25,7 +25,6 @@ public class Projectile : MonoBehaviour
 
         if(lifeBtwTimer >= maxLife)
         {
-            //Instantiate(destoryEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
@@ -34,7 +33,6 @@ public class Projectile : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            //Instantiate(destoryEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
